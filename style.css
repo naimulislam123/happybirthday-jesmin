@@ -7,11 +7,11 @@ font-family:Poppins,sans-serif;
 
 body{
 
-background:linear-gradient(135deg,#ff9ecb,#ffd6ec,#fff);
-
-height:100vh;
+background:linear-gradient(135deg,#ff8ec7,#ffd6e8,#fff);
 
 overflow:hidden;
+
+height:100vh;
 
 display:flex;
 
@@ -37,95 +37,117 @@ align-items:center;
 
 flex-direction:column;
 
-text-align:center;
-
 }
 
 .active{
 
 display:flex;
 
+animation:fade 1.2s;
+
 }
 
-.title{
+.card{
 
-font-size:34px;
+background:rgba(255,255,255,.25);
 
-width:80%;
+backdrop-filter:blur(12px);
+
+padding:40px;
+
+border-radius:30px;
+
+text-align:center;
+
+box-shadow:0 0 35px rgba(255,105,180,.3);
+
+width:90%;
+
+max-width:420px;
+
+}
+
+.card h3{
+
+font-size:70px;
+
+}
+
+.card h1{
 
 color:#ff2d75;
 
-animation:fadeIn 2s ease;
+margin:15px 0;
 
 }
 
-#startBtn{
+.card p{
 
-margin-top:40px;
+color:#555;
 
-padding:18px 45px;
+margin-bottom:25px;
 
-font-size:22px;
+}
+
+button{
+
+padding:16px 35px;
 
 border:none;
 
 border-radius:40px;
 
-background:#ff4d88;
+background:#ff2d75;
 
 color:white;
 
-cursor:pointer;
+font-size:18px;
 
-box-shadow:0 0 25px #ff7ca7;
+cursor:pointer;
 
 transition:.3s;
 
 }
 
-#startBtn:hover{
+button:hover{
 
-transform:scale(1.1);
+transform:scale(1.08);
 
 }
 
-#giftBox{
+.giftBox{
 
-font-size:150px;
+font-size:140px;
 
 cursor:pointer;
 
-animation:bounce 1.4s infinite;
+animation:bounce 1.3s infinite;
 
 }
 
-p{
-
-font-size:25px;
-
-color:#ff2d75;
+h2{
 
 margin-top:20px;
+
+color:#ff2d75;
 
 }
 
 @keyframes bounce{
 
-0%{transform:translateY(0);}
+0%,100%{transform:translateY(0);}
 
-50%{transform:translateY(-20px);}
-
-100%{transform:translateY(0);}
+50%{transform:translateY(-18px);}
 
 }
 
-@keyframes fadeIn{
+@keyframes fade{
 
 from{
 
 opacity:0;
 
-transform:translateY(40px);
+transform:scale(.9);
 
 }
 
@@ -133,7 +155,7 @@ to{
 
 opacity:1;
 
-transform:translateY(0);
+transform:scale(1);
 
 }
 
