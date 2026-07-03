@@ -13,13 +13,11 @@ giftBox.onclick = () => {
     giftBox.classList.add("open");
 
     setTimeout(() => {
-        document.body.innerHTML = `
-        <div class="birthday">
-            <h1>🎂</h1>
-            <h2>Happy Birthday</h2>
-            <h3>Jesmin 💖</h3>
-        </div>
-        `;
+
+        scene2.classList.remove("active");
+
+        document.getElementById("birthdayScene").classList.add("active");
+
     },1200);
 
 }
