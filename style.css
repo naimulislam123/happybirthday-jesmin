@@ -160,3 +160,83 @@ transform:scale(1);
 }
 
 }
+.open{
+
+animation:openBox 1.2s forwards;
+
+}
+
+@keyframes openBox{
+
+0%{
+
+transform:scale(1) rotate(0);
+
+}
+
+30%{
+
+transform:scale(1.15) rotate(-8deg);
+
+}
+
+60%{
+
+transform:scale(1.2) rotate(8deg);
+
+}
+
+100%{
+
+transform:scale(0);
+opacity:0;
+
+}
+
+}
+
+.birthday{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(135deg,#ff77aa,#ffd6e8,#fff);
+
+animation:fade 2s;
+
+}
+
+.birthday h1{
+
+font-size:90px;
+
+animation:bounce 1.5s infinite;
+
+}
+
+.birthday h2{
+
+font-size:55px;
+
+color:#ff2d75;
+
+}
+
+.birthday h3{
+
+font-size:65px;
+
+color:#ff4d88;
+
+margin-top:15px;
+
+text-shadow:0 0 20px pink;
+
+}
