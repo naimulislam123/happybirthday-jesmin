@@ -226,7 +226,99 @@ animation:bounce 1.5s infinite;
 font-size:55px;
 
 color:#ff2d75;
+#birthdayScene{
 
+background:linear-gradient(135deg,#ff80b5,#ffd8ec,#fff);
+
+overflow:auto;
+
+padding:40px;
+
+}
+
+.birthdayTitle{
+
+font-size:45px;
+
+color:#ff2d75;
+
+margin-top:40px;
+
+text-align:center;
+
+animation:fade 2s;
+
+}
+
+.photo{
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+margin:30px auto;
+
+display:block;
+
+border:6px solid white;
+
+box-shadow:0 0 25px pink;
+
+}
+
+.message{
+
+max-width:700px;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+line-height:1.8;
+
+font-size:18px;
+
+box-shadow:0 0 20px rgba(0,0,0,.1);
+
+animation:fade 2s;
+
+}
+
+.hearts::before{
+
+content:"❤️ 💖 💕 💗 💘";
+
+position:fixed;
+
+font-size:30px;
+
+width:100%;
+
+animation:float 8s linear infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(100vh);
+
+}
+
+100%{
+
+transform:translateY(-120vh);
+
+}
+
+}
 }
 
 .birthday h3{
