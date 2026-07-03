@@ -1,13 +1,25 @@
-const startBtn=document.getElementById("startBtn");
+const startBtn = document.getElementById("startBtn");
+const scene1 = document.getElementById("scene1");
+const scene2 = document.getElementById("scene2");
+const giftBox = document.querySelector(".giftBox");
 
-const scene1=document.getElementById("scene1");
+startBtn.onclick = () => {
+    scene1.classList.remove("active");
+    scene2.classList.add("active");
+};
 
-const scene2=document.getElementById("scene2");
+giftBox.onclick = () => {
 
-startBtn.onclick=()=>{
+    giftBox.classList.add("open");
 
-scene1.classList.remove("active");
-
-scene2.classList.add("active");
+    setTimeout(() => {
+        document.body.innerHTML = `
+        <div class="birthday">
+            <h1>🎂</h1>
+            <h2>Happy Birthday</h2>
+            <h3>Jesmin 💖</h3>
+        </div>
+        `;
+    },1200);
 
 }
